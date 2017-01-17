@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Павел Елфимов](https://up.htmlacademy.ru/htmlcss/16/user/182558).
-* Наставник: `Неизвестно`.
+* Наставник: [Вадим Новаш](https://htmlacademy.ru/profile/stakeout).
 
 ---
 
