@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+	
+	<header class="main-header">
+	  <div class="container">
+        <nav class="main-navigation">
+          <ul>
+            <li>
+              <a href="#">ИНФОРМАЦИЯ</a>
+            </li>
+            <li>
+              <a href="#">ФОТО И ВИДЕО</a>
+            </li>
+            <li>
+              <a href="#">КАРТА ШТАТА</a>
+            </li>
+            <li>
+              <a href="#">ГОСТИНИЦЫ</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+	  <div class="index-logo">
+        <a href="#"><img src="http://placehold.it/50x50" width="50" height="50" alt="Логотип «City of Cedona»">Логотип города Седона</a>
+      </div>
+	</header>
+	<main class="container">
+	  <form class="hotel-selection-form" action="https://echo.htmlacademy.ru" method="post">
+			<fieldset class="infrastructure-form">
+				<legend>ИНФРАСТРУКТУРА:</legend>
+				<input type="checkbox" name="swimming-pool" id="swimming-pool">
+				<label for="swimming-pool" >БАСЕЙН:</label>
+				<input type="checkbox" name="parking" id="parking">
+				<label for="parking" >ПАРКОВКА:</label>
+				<input type="checkbox" name="wi-fi" id="wi-fi">
+				<label for="wi-fi" >WI-FI:</label>
+			</fieldset>
+			<fieldset class="hotel-type-form">
+				<legend>ТИП ЖИЛЬЯ:</legend>
+				<input type="checkbox" name="hotel-type" id="hotel-type">
+				<label for="hotel-type" >ОТЕЛЬ:</label>
+				<input type="checkbox" name="motel-type" id="motel-type">
+				<label for="motel-type" >МОТЕЛЬ:</label>
+				<input type="checkbox" name="apartments-type" id="apartments-type">
+				<label for="apartments-type" >АПАРТАМЕНТЫ:</label>
+			</fieldset>
+			<fieldset class="price-night-form">
+				<legend>СТОИМОТЬ В СУТКИ:</legend>
+			<! Тут будут бегунки для выбора цены отеля!>	
+			</fieldset>	 	
+			<button class="btn" type="submit">НАЙТИ</button>
+          </form>
+	</main>
+	<footer class="main-footer">
+      <div class="container">
+        <section class="footer-contacts">
+          #VISITSEDONA
+        </section>
+        <section class="footer-social">
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+        </section>
+        <section class="footer-copyright">
+          <p>WEBSITE BY</p>
+          <img src="http://placehold.it/130x44" width="130" height="44" alt="HTML Academy">
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>
