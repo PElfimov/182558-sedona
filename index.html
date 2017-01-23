@@ -5,8 +5,88 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+	
+	<header class="main-header">
+	  <div class="container">
+        <nav class="main-navigation">
+          <ul>
+            <li>
+              <a href="#">ИНФОРМАЦИЯ</a>
+            </li>
+            <li>
+              <a href="#">ФОТО И ВИДЕО</a>
+            </li>
+            <li>
+              <a href="#">КАРТА ШТАТА</a>
+            </li>
+            <li>
+              <a href="#">ГОСТИНИЦЫ</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+	  <div class="index-logo">
+        <a href="#"><img src="http://placehold.it/50x50" width="50" height="50" alt="Логотип «City of Cedona»"></a>
+      </div>
+	</header>
+	<main class="container">
+	  <div class="main-picture">
+	    <img src="http://placehold.it/1200x500" width="1200" height="500" alt="Главная фотография страницы сайта «City of Cedona»">
+	  </div>
+	  <h2>СЕДОНА — НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h2>
+	  <section class="features">
+		<p>РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!</p>
+        <div class="features-item">
+          <b class="features-name">НАСТОЯЩИЙ ГОРОДОК</b>
+		  <p>— №1 —</p>
+		  <p>СЕДОНА — НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+		  <img src="http://placehold.it/800x200" width="800" height="200" alt="Фотография города «City of Cedona»">
+        </div>
+		<div class="features-item">
+          <b class="features-name">ЖИЛЬЕ</b>
+		  <p>РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, ВСЕ КАК В КИНО!</p>
+		</div>
+		<div class="features-item">
+          <b class="features-name">ЕДА</b>
+		  <p>ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР,ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
+		</div>
+		<div class="features-item">
+          <b class="features-name">СУВЕНИРЫ</b>
+		  <p>НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО ПРОИЗВОДСТВА!</p>
+		</div>
+		<div class="features-item">
+		  <img src="http://placehold.it/800x200" width="800" height="200" alt="Фотография мотса дьявола «City of Cedona»">
+          <b class="features-name">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</b>
+		  <p>— №2 —</p>
+		  <p>ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ КОНЕЧНО ВЫ ОСМЕЛИТЕСЬ</p>
+		</div>
+		<div class="features-item">
+		  <b class="features-name">НЕБОЛЬШАЯ ПЛОЩАДЬ</b>
+		  <p>— №3 —</p>
+		  <p>ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
+		</div>
+		<div class="features-item">
+		  <b class="features-name">КРАСИВАЯ ДОРОГА</b>
+		  <p>— №4 —</p>
+		  <p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО!</p>
+		</div>
+		<div class="features-item">
+		  <b class="features-name">МАЛО ТУРИСТОВ</b>
+		  <p>— №5 —</p>
+		  <p>БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН И ТОЛПИТСЯ ТАМ</p>
+		</div>
+	  </section>
+	  <div class="index-content">
+	    <h2 class="index-content-title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+		<p>УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ, И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
+          <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+            <input type="text" name="date" value="" placeholder="Дата">
+            <input type="text" name="time" value="" placeholder="Время">
+            <input type="text" name="name" value="" placeholder="Ваше имя">
+            <input type="tel" name="phone" value="" placeholder="Телефон">
+            <button class="btn" type="submit">Отправить</button>
+          </form>
+	  </div>
+	</main>
   </body>
 </html>
