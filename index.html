@@ -26,7 +26,7 @@
         </nav>
       </div>
 	  <div class="index-logo">
-        <a href="#"><img src="http://placehold.it/50x50" width="50" height="50" alt="Логотип «City of Cedona»"></a>
+        <a href="#"><img src="http://placehold.it/50x50" width="50" height="50" alt="Логотип «City of Cedona»">Логотип города Седона</a>
       </div>
 	</header>
 	<main class="container">
@@ -80,13 +80,39 @@
 	    <h2 class="index-content-title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
 		<p>УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ, И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
           <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
-            <input type="text" name="date" value="" placeholder="Дата">
-            <input type="text" name="time" value="" placeholder="Время">
-            <input type="text" name="name" value="" placeholder="Ваше имя">
-            <input type="tel" name="phone" value="" placeholder="Телефон">
-            <button class="btn" type="submit">Отправить</button>
+			<div class="form-title">
+				<p>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</p>
+			</div>
+            <label for="coming-date" >ДАТА ЗАЕЗДА:</label>
+			<input type="date" name="coming-date" id="coming-date">
+			<label for="exit-date" >ДАТА ВЫЕЗДА:</label>
+            <input type="date" name="exit-date" id="exit-date">
+			<label for="number-children" >КОЛИЧЕСТВО ДЕТЕЙ:</label>
+            <input type="number" name="number-children" id="number-children">
+			<label for="number-adults" >КОЛИЧЕСТВО ВЗРОСЛЫХ:</label>
+            <input type="number" name="number-adults" id="number-adults">
+            <button class="btn" type="submit">НАЙТИ</button>
           </form>
+		  <div class="map-picture">
+			<img src="http://placehold.it/1200x500" width="1200" height="500" alt="Фотография карты «City of Cedona»">
+		  </div>
 	  </div>
 	</main>
+	<footer class="main-footer">
+      <div class="container">
+        <section class="footer-contacts">
+          #VISITSEDONA
+        </section>
+        <section class="footer-social">
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+        </section>
+        <section class="footer-copyright">
+          <p>Разработано:</p>
+          <a href="https://htmlacademy.ru">HTML Academy</a>
+        </section>
+      </div>
+    </footer>
   </body>
 </html>
