@@ -4,12 +4,11 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
-  <body>
-		<div class ="main-container">
-			<header class="main-header">
-				<div class="container">
-						<nav class="main-navigation">
-							<ul>
+  <body class="page">
+		<div class ="page-main-container">
+			<header class="page-main-header">
+						<nav class="page-main-navigation">
+							<ul class="page-main-navigation-lists">
 								<li>
 									<a href="#">Информация</a>
 								</li>
@@ -24,14 +23,13 @@
 								</li>
 							</ul>
 						</nav>
-					</div>
-				<div class="index-logo">
+					<div class="page-main-header-index-logo">
 						<a href="#"><img src="http://placehold.it/50x50" width="50" height="50" alt="Логотип «City of Cedona»">Логотип города Седона</a>
 					</div>
 			</header>
-			<main class="container">
-				<form class="hotel-selection-form" action="https://echo.htmlacademy.ru" method="post">
-					<fieldset class="infrastructure-form">
+			<main class="page-content">
+				<form class="page-content-hotel-selection-form" action="https://echo.htmlacademy.ru" method="post">
+					<fieldset class="page-content-infrastructure-form">
 						<legend>Инфраструктура:</legend>
 						<input type="checkbox" name="swimming-pool" id="swimming-pool">
 						<label for="swimming-pool" >Басейн:</label>
@@ -54,8 +52,8 @@
 					<! Тут будут бегунки для выбора цены отеля!>	
 					</fieldset>	 	
 					<button class="btn" type="submit">Показать</button>
-							</form>
-				<div class="sorting-found">
+				</form>
+				<div class="page-content-sorting-found">
 					<b class="number-found">Найдено: 3</b>
 					<p>Сортировка:</p>
 					<ul>
@@ -66,18 +64,60 @@
 						<li><a class="sorting-found-down" href="#">сортировка по убыванию</a></li>
 					</ul>
 				</div>
-				<div class="catalog-content">
+				<div class="page-content-catalog">
 					<article class="found-hotel">
 						<div class="found-hotel-img">
 							<img src="http://placehold.it/100x100" width="100" height="100" alt="Отель «Amara Resort & Spa»">
-						</div>	
-						<h2 class="hotel-title"><a href="#">Amara resort & spa</a></h2> 
-						<p class="content-hotel-type">Гостинца</p>
-						<p class="content-hotel-price">от 4000 р.</p>
-						<a class="content-hotel-btn" href="#">Подробнее</a>
-						<a class="content-hotel-btn" href="#">Забронировать</a>
+						</div>
+						<div class="found-hotel-content">
+							<h2 class="hotel-title"><a href="#">Amara resort & spa</a></h2> 
+							<p class="content-hotel-type">Гостинца</p>
+							<p class="content-hotel-price">от 4000 р.</p>
+							<a class="content-hotel-btn content-hotel-btn-more" href="#">Подробнее</a>
+							<a class="content-hotel-btn content-hotel-btn-reserv" href="#">Забронировать</a>
+						</div>
 						<div class="content-hotel-rating">
-							<p><span>****</span>Рейтинг: 8,5</p>
+							<span class="content-hotel-rating-stars">*</span>
+							<span class="content-hotel-rating-stars">*</span>
+							<span class="content-hotel-rating-stars">*</span>
+							<span class="content-hotel-rating-stars">*</span>
+							<p>Рейтинг: <span class="content-hotel-rating-sum">8,5</span></p>
+						</div>
+					</article>
+					<article class="found-hotel">
+						<div class="found-hotel-img">
+							<img src="http://placehold.it/100x100" width="100" height="100" alt="Отель «Amara Resort & Spa»">
+						</div>
+						<div class="found-hotel-content">
+							<h2 class="hotel-title"><a href="#">Desert quail inn</a></h2> 
+							<p class="content-hotel-type">Мотель</p>
+							<p class="content-hotel-price">от 3000 р.</p>
+							<a class="content-hotel-btn content-hotel-btn-more" href="#">Подробнее</a>
+							<a class="content-hotel-btn content-hotel-btn-reserv" href="#">Забронировать</a>
+						</div>
+						<div class="content-hotel-rating">
+							<span class="content-hotel-rating-stars">*</span>
+							<span class="content-hotel-rating-stars">*</span>
+							<p>Рейтинг: <span class="content-hotel-rating-sum">8,9</span></p>
+						</div>
+					</article>
+					<article class="found-hotel">
+						<div class="found-hotel-img">
+							<img src="http://placehold.it/100x100" width="100" height="100" alt="Отель «Amara Resort & Spa»">
+						</div>
+						<div class="found-hotel-content">
+							<h2 class="hotel-title"><a href="#">Amara resort & spa</a></h2> 
+							<p class="content-hotel-type">Гостинца</p>
+							<p class="content-hotel-price">от 4000 р.</p>
+							<a class="content-hotel-btn content-hotel-btn-more" href="#">Подробнее</a>
+							<a class="content-hotel-btn content-hotel-btn-reserv" href="#">Забронировать</a>
+						</div>
+						<div class="content-hotel-rating">
+							<span class="content-hotel-rating-stars">*</span>
+							<span class="content-hotel-rating-stars">*</span>
+							<span class="content-hotel-rating-stars">*</span>
+							<span class="content-hotel-rating-stars">*</span>
+							<p>Рейтинг: <span class="content-hotel-rating-sum">8,5</span></p>
 						</div>
 					</article>
 					<article class="found-hotel">
