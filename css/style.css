@@ -1,0 +1,22 @@
+body {
+  font-family: "PT Sans";
+	font-size: 14px;
+	line-height:21px;
+	color: #000000;
+	font-weight: bold;
+	text-transform:uppercase ;
+
+}
+
+h2.page-content-tagline {
+    font-size: 21px;
+		line-height:26px;
+		
+}
+
+h2.page-content-index-title {
+	font-size: 30px;
+	line-height:24px;
+	
+	
+}
