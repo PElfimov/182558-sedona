@@ -1,18 +1,110 @@
+html,
 body {
-  font-family: "PT Sans" ,"Arial";
+
+	min-width: 1280px;
+	min-height: 2762px;
+	margin: 0;
+	padding: 0;
+	background: #000000 url("../img/sedona.jpg") no-repeat 50% 0px;
+	background-size: 1280px auto;
+	font-family: "PT Sans" ,"Arial";
 	font-size: 14px;
 	line-height:21px;
 	color: #000000;
 	font-weight: bold;
 	text-transform:uppercase ;
+	
 
 }
 
-h2.page-content-tagline {
-    font-size: 21px;
-		line-height:26px;
-		
+.text {
+	margin:0;
+	
 }
+
+div.page-container {
+	width: 1200px;
+	min-height: 2762px;
+    margin: 0 auto;
+	background-color:rgba(249, 201, 16,0.5);
+	
+	
+  
+  
+	
+}
+
+.page-header {
+	pading: 0 10px;
+  /* Только для оформления сетки */
+  min-height: 56px;
+  background-color:rgba(50, 50, 16,0.5);
+}
+
+
+li.page-header-navigation-item {
+    display: inline-block;
+    
+}
+
+
+div.page-header-index-logo {
+	position:absolute;
+	top: 0px;
+    left: 50%;
+	margin-left: -69px;
+}
+
+
+.page-content {
+	background-color:rgba(50, 100, 16,0.5);
+	
+	
+}
+
+.page-content-main-picture {
+	
+	
+	/* Только для оформления сетки */
+	min-height: 510px;
+	background-color:rgba(50, 150, 16,0.5);
+	
+}
+
+.page-content-main-picture img {
+	display: block;
+}
+
+.page-content-tagline {
+	display: block;
+	/* Только для оформления сетки */
+	min-height: 108px;
+	background-color:rgba(129, 179, 210,0.5);
+}
+
+.page-content-features-header {
+	
+	/* Только для оформления сетки */
+	min-height: 107px;
+	background-color:rgba(210, 198, 129,0.5);
+}
+
+.page-content-features-text {
+	width: 400px;
+	min-height: 256px;
+	float:left;
+	background-color:rgba(210, 20, 129,0.5);
+}
+
+
+
+.page-content-features-photo {
+	display:block;
+	float:left;
+	width: 800px;
+}
+	
+
 
 h2.page-content-index-title {
 	font-size: 30px;
@@ -20,3 +112,7 @@ h2.page-content-index-title {
 	
 	
 }
+
+
+
+
