@@ -89,14 +89,18 @@ div.page-header-index-logo {
 	background-color:rgba(210, 198, 129,0.5);
 }
 
-.page-content-features-text {
+.page-content-features-text,
+.item-icon{
 	width: 400px;
 	min-height: 256px;
 	float:left;
 	background-color:rgba(210, 20, 129,0.5);
 }
 
-
+.item-icon {
+	min-height: 330px;
+	
+}
 
 .page-content-features-photo {
 	display:block;
@@ -104,14 +108,64 @@ div.page-header-index-logo {
 	width: 800px;
 }
 	
+.page-content-features::after {
+ content: "";
+ display: table;
+ clear: both;
+}
 
-
-h2.page-content-index-title {
-	font-size: 30px;
-	line-height:24px;
-	
+.page-content-index-found {
+	min-height: 291px;
 	
 }
+
+.page-content-index-map-picture {
+	min-height: 473px;
+	
+}
+
+.page-content-index-map-picture img{
+	display:block;
+	
+}
+
+.page-footer {
+	min-height: 84px;
+	padding-top: 36px;
+	
+}
+
+.page-footer-contacts{
+	float: left;
+	width: 200px;
+	min-height:37px;
+	background-color:rgba(210, 20, 129,0.5);
+	font-size: 21px;
+	line-height:26px;
+	padding-top:11px;
+	margin-left:133px;
+	
+}
+
+.page-footer-social{
+	float: left;
+	width: 150px;
+	min-height:48px;
+	background-color:rgba(210, 20, 129,0.5);
+	margin-left:190px;
+	
+}
+
+.footer-copyright{
+	float: right;
+	width: 241px;
+	min-height: 48px;
+	background-color:rgba(210, 20, 129,0.5);
+	vertical-align:middle;
+	line-height:26px;
+	margin-right: 55px;
+}
+
 
 
 
