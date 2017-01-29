@@ -5,7 +5,7 @@ body {
 	min-height: 2762px;
 	margin: 0;
 	padding: 0;
-	background: #000000 url("../img/sedona.jpg") no-repeat 50% 0px;
+	background: #000000 url("../img/catalog.jpg") no-repeat 50% 0px;
 	background-size: 1280px auto;
 	font-family: "PT Sans" ,"Arial";
 	font-size: 14px;
@@ -24,7 +24,7 @@ body {
 
 div.page-container {
 	width: 1200px;
-	min-height: 2762px;
+	
     margin: 0 auto;
 	background-color:rgba(249, 201, 16,0.5);
 	
@@ -108,7 +108,10 @@ div.page-header-index-logo {
 	width: 800px;
 }
 	
-.page-content-features::after {
+.page-content-features::after,
+.page-footer::after,
+.page-content-hotel-selection-form::after,
+.found-hotel::after{
  content: "";
  display: table;
  clear: both;
@@ -165,6 +168,73 @@ div.page-header-index-logo {
 	line-height:26px;
 	margin-right: 55px;
 }
+
+.page-content-hotel-selection-form {
+	
+	background: #000000 url("../img/mainphotocat.jpg") no-repeat 50% -290px;
+	background-size: 1280px auto; 
+	min-height:217px;
+}
+
+.page-content-infrastructure-form,
+.hotel-type-form {
+	float:left;
+	width: 240px;
+	min-height:217px;
+	padding:0;
+	border: none;
+	margin-left: 50px;
+
+}
+.price-night-form {
+	float:right;
+	width: 370px;
+	margin-right: 50px;
+	padding:0;
+	border: none;
+	min-height:217px;
+}
+
+.page-content-sorting-found {
+	min-height:86px;
+	
+	
+}
+
+.page-content-sorting-found li{
+	display:inline-block;
+	
+}
+
+.found-hotel-img {
+	width:160px;
+	float:left;
+	min-height:152px;
+	margin-left: 60px;
+	
+}
+
+.found-hotel-img img {
+	display:block;
+	margin: 31px auto;
+	
+}
+.found-hotel-content {
+	min-height:132px;
+	width:280px;
+	padding: 10px;
+	float:left;
+	
+}
+
+.content-hotel-rating {
+	float:right;
+	width:200px;
+	padding: 10px;
+	min-height:132px;
+	
+}
+
 
 
 
