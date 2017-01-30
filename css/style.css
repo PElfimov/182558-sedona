@@ -114,10 +114,8 @@ div.page-header-index-logo {
 
 
 	
-.page-content-features::after,
-.page-footer::after,
-.page-content-hotel-selection-form::after,
-.found-hotel::after{
+
+.clearfix::after{
  content: "";
  display: table;
  clear: both;
