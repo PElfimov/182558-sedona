@@ -21,6 +21,11 @@ body {
 	
 }
 
+.photo  {
+	display: block;
+	
+}
+
 div.page-container {
 	width: 1200px;
 	
@@ -49,9 +54,9 @@ li.page-header-navigation-item {
 
 div.page-header-index-logo {
 	position:absolute;
-	top: 0px;
-    left: 50%;
-	margin-left: -69px;
+	top: 0;
+  left: calc(50% - 69px);
+	
 }
 
 
@@ -102,10 +107,12 @@ div.page-header-index-logo {
 }
 
 .page-content-features-photo {
-	display:block;
+	
 	float:left;
 	width: 800px;
 }
+
+
 	
 .page-content-features::after,
 .page-footer::after,
@@ -126,10 +133,7 @@ div.page-header-index-logo {
 	
 }
 
-.page-content-index-map-picture img{
-	display:block;
-	
-}
+
 
 .page-footer {
 	min-height: 84px;
@@ -153,7 +157,7 @@ div.page-header-index-logo {
 	float: left;
 	width: 150px;
 	min-height:48px;
-	background-color:rgba(210, 20, 129,0.5);
+	background-color:rgba(210, 20, 129, 0.5);
 	margin-left:190px;
 	
 }
