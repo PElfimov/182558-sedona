@@ -4,93 +4,141 @@ body {
 	min-width: 1280px;
 	margin: 0;
 	padding: 0;
-	 /*background: #000000 url("../img/catalog.jpg") no-repeat 50% 0px;
-	background-size: 1280px auto;*/
-	font-family: "PT Sans" ,"Arial";
+	background: url("../img/sedona.jpg") no-repeat 50% 0px;
+	background-size: 1280px auto;
+	background-color:#f2f2f2;
+	font-family: "PT Sans" ,"Arial", sans-serif;
 	font-size: 14px;
 	line-height:21px;
 	color: #000000;
 	font-weight: bold;
 	text-transform:uppercase ;
-	
-
 }
 
 .text {
 	margin:0;
-	
 }
 
 .photo  {
 	display: block;
-	
 }
 
-div.page-container {
+.page-container {
 	width: 1200px;
-	
-    margin: 0 auto;
-	background-color:rgba(249, 201, 16,0.5);
-	
-	
-  
-  
-	
-}
-
-.page-header {
-	pading: 0 10px;
-  /* Только для оформления сетки */
-  min-height: 56px;
-  background-color:rgba(50, 50, 16,0.5);
+  margin: 0 auto;
+	position: relative;
 }
 
 
-li.page-header-navigation-item {
-    display: inline-block;
-    
+.page-header-navigation  a{
+	color: #000000;
+	text-decoration: none;
 }
 
+.page-header-navigation  a:hover{
+	color: #81b3d2;
+}
 
-div.page-header-index-logo {
+.page-header-navigation  a:active{
+	color: rgba(0,0,0,.3);
+}
+
+.page-header-navigation .active{
+	color: #766357;
+}
+
+.page-header-navigation ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+}
+
+.page-header-navigation li {
+    vertical-align: top;
+		font-size: 14px;
+		line-height:26px;
+		padding: 15px 72px;
+}
+
+.page-header-navigation li:nth-of-type(3)
+ {
+	 margin-left:auto;
+}
+
+.page-header-index-logo {
 	position:absolute;
 	top: 0;
-  left: calc(50% - 69px);
-	
+	left:50%;
+	z-index: 5;
+	transform: translateX(-50%);
 }
 
-
-.page-content {
-	background-color:rgba(50, 100, 16,0.5);
-	
-	
+.page-header-index-logo a {
+	font-size:0;
 }
 
 .page-content-main-picture {
-	
-	
-	/* Только для оформления сетки */
-	min-height: 510px;
-	background-color:rgba(50, 150, 16,0.5);
-	
+	position: relative;
+	width: 1200px;
+	height: 510px;
+	background-color: #3c78a1;
 }
 
 .page-content-main-picture img {
-	display: block;
+ display: block;
+}
+
+.page-content-main-picture::before {
+	content: "";
+	position: absolute;
+	width: 458px;
+	height: 352px;
+	background: url("../img/welcomesedona.png") no-repeat;
+	transform: translate(-50%,-51%);
+	top:50%;
+	left: 50%;
+}
+.page-content-main-picture::after {
+	content: "";
+	position: absolute;
+	width: 1200px;
+	height: 57px;
+	background: url("../img/mainphotomask.svg") no-repeat;
+	transform: translate(-50%,-100%);
+	top:100%;
+	left: 50%;
 }
 
 .page-content-tagline {
-	display: block;
-	/* Только для оформления сетки */
+	display: flex;
 	min-height: 108px;
-	background-color:rgba(129, 179, 210,0.5);
 }
 
+.page-content-tagline b {
+	font-size: 21px;
+	line-height:26px;
+	text-align: center;
+	display: block;
+	width: 576px;
+	margin-left: auto;;
+	margin-right: auto;
+	margin-top: auto;
+
+}
 .page-content-features-header {
-	
-	/* Только для оформления сетки */
 	min-height: 107px;
-	background-color:rgba(210, 198, 129,0.5);
+	display: flex;
+}
+
+.page-content-features-header p {
+	font-size: 14px;
+	line-height:26px;
+	font-weight: normal;
+	text-align: center;
+	margin-left: auto;;
+	margin-right: auto;
+	margin-top: 30px;
 }
 
 .page-content-features-text,
@@ -103,17 +151,17 @@ div.page-header-index-logo {
 
 .item-icon {
 	min-height: 330px;
-	
+
 }
 
 .page-content-features-photo {
-	
+
 	float:left;
 	width: 800px;
 }
 
 
-	
+
 
 .clearfix::after{
  content: "";
@@ -123,12 +171,12 @@ div.page-header-index-logo {
 
 .page-content-index-found {
 	min-height: 291px;
-	
+
 }
 
 .page-content-index-map-picture {
 	min-height: 473px;
-	
+
 }
 
 
@@ -136,7 +184,7 @@ div.page-header-index-logo {
 .page-footer {
 	min-height: 84px;
 	padding-top: 36px;
-	
+
 }
 
 .page-footer-contacts{
@@ -148,7 +196,7 @@ div.page-header-index-logo {
 	line-height:26px;
 	padding-top:11px;
 	margin-left:133px;
-	
+
 }
 
 .page-footer-social{
@@ -157,7 +205,7 @@ div.page-header-index-logo {
 	min-height:48px;
 	background-color:rgba(210, 20, 129, 0.5);
 	margin-left:190px;
-	
+
 }
 
 .footer-copyright{
@@ -171,9 +219,9 @@ div.page-header-index-logo {
 }
 
 .page-content-hotel-selection-form {
-	
+
 	background: #000000 url("../img/mainphotocat.jpg") no-repeat 50% -290px;
-	background-size: 1280px auto; 
+	background-size: 1280px auto;
 	min-height:217px;
 }
 
@@ -198,13 +246,13 @@ div.page-header-index-logo {
 
 .page-content-sorting-found {
 	min-height:86px;
-	
-	
+
+
 }
 
 .page-content-sorting-found li{
 	display:inline-block;
-	
+
 }
 
 .found-hotel-img {
@@ -212,20 +260,20 @@ div.page-header-index-logo {
 	float:left;
 	min-height:152px;
 	margin-left: 60px;
-	
+
 }
 
 .found-hotel-img img {
 	display:block;
 	margin: 31px auto;
-	
+
 }
 .found-hotel-content {
 	min-height:132px;
 	width:280px;
 	padding: 10px;
 	float:left;
-	
+
 }
 
 .content-hotel-rating {
@@ -233,11 +281,120 @@ div.page-header-index-logo {
 	width:200px;
 	padding: 10px;
 	min-height:132px;
-	
+
 }
 
 
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
 
+.sprite-_ {
+    width: 26px;
+    height: 22px;
+    background-position: -3px -3px;
+}
 
+.sprite-_ {
+    width: 22px;
+    height: 22px;
+    background-position: -35px -3px;
+}
 
+.sprite-_-locked {
+    width: 26px;
+    height: 22px;
+    background-position: -63px -3px;
+}
 
+.sprite-burgericon {
+    width: 74px;
+    height: 70px;
+    background-position: -95px -3px;
+}
+
+.sprite-calendaricon {
+    width: 21px;
+    height: 22px;
+    background-position: -175px -3px;
+}
+
+.sprite-calendaricon-hover {
+    width: 21px;
+    height: 22px;
+    background-position: -3px -31px;
+}
+
+.sprite-calendaricon-push {
+    width: 21px;
+    height: 22px;
+    background-position: -30px -31px;
+}
+
+.sprite-fIcon {
+    width: 10px;
+    height: 19px;
+    background-position: -57px -31px;
+}
+
+.sprite-fIcon-push {
+    width: 10px;
+    height: 19px;
+    background-position: -73px -31px;
+}
+
+.sprite-houseIcon {
+    width: 75px;
+    height: 72px;
+    background-position: -3px -79px;
+}
+
+.sprite-logohtml {
+    width: 113px;
+    height: 39px;
+    background-position: -84px -79px;
+}
+
+.sprite-logohtml-hover {
+    width: 113px;
+    height: 39px;
+    background-position: -84px -124px;
+}
+
+.sprite-logohtml-push {
+    width: 113px;
+    height: 39px;
+    background-position: -202px -3px;
+}
+
+.sprite-souvenirIcon {
+    width: 64px;
+    height: 76px;
+    background-position: -203px -48px;
+}
+
+.sprite-tviticon {
+    width: 17px;
+    height: 15px;
+    background-position: -175px -48px;
+}
+
+.sprite-tviticon-push {
+    width: 17px;
+    height: 15px;
+    background-position: -273px -48px;
+}
+
+.sprite-yicon {
+    width: 20px;
+    height: 16px;
+    background-position: -296px -48px;
+}
+
+.sprite-yicon-push {
+    width: 20px;
+    height: 16px;
+    background-position: -273px -70px;
+}
