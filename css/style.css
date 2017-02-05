@@ -27,6 +27,7 @@ body {
 	width: 1200px;
   margin: 0 auto;
 	position: relative;
+	/*background-color: white;*/
 }
 
 
@@ -56,9 +57,11 @@ body {
 
 .page-header-navigation li {
     vertical-align: top;
+		width: 240px;
 		font-size: 14px;
 		line-height:26px;
-		padding: 15px 72px;
+		text-align: center;
+		padding: 15px 0;
 }
 
 .page-header-navigation li:nth-of-type(3)
@@ -124,54 +127,163 @@ body {
 	margin-left: auto;;
 	margin-right: auto;
 	margin-top: auto;
-
-}
-.page-content-features-header {
-	min-height: 107px;
-	display: flex;
 }
 
 .page-content-features-header p {
 	font-size: 14px;
 	line-height:26px;
+	color:#333333;
 	font-weight: normal;
 	text-align: center;
 	margin-left: auto;;
 	margin-right: auto;
 	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+.page-content-features{
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+.page-content-features-item{
+	font-weight: normal;
+	color:#333333;
+	text-align: center;
+
+}
+.with-photo {
+	display: flex;
+	background-color: #81b3d2;
+	color: #ffffff;
+
+}
+.with-photo .page-content-features-text b{
+	color: #ffffff;
+}
+
+.page-content-features-item b{
+		display:inline-block;
+		font-weight: bold;
+		color:#000000;
+		font-size: 21px;
+		line-height:21px;
+		width: 160px;
+		margin-bottom: 23px;
+}
+
+.item-number {
+		display:block;
+		margin-bottom: 21px;
+
 }
 
 .page-content-features-text,
 .item-icon{
-	width: 400px;
-	min-height: 256px;
-	float:left;
-	background-color:rgba(210, 20, 129,0.5);
-}
-
-.item-icon {
-	min-height: 330px;
+	width: 280px;
+	padding: 60px;
+	padding-top: 55px;
+	padding-bottom: 38px;
 
 }
 
 .page-content-features-photo {
-
-	float:left;
 	width: 800px;
 }
 
+.item-icon{
+	min-height: 130px;
+	position: relative;
+	padding-top: 162px
+}
+.item-icon p{
+margin-top: 0;
 
-
-
-.clearfix::after{
- content: "";
- display: table;
- clear: both;
+}
+.item-icon b{
+margin-bottom: 24px;
 }
 
-.page-content-index-found {
-	min-height: 291px;
+.item-icon::before{
+	content: "";
+	position: absolute;
+	display: block;
+	top: 29%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: url("../img/spritesheet.png") no-repeat;
 
+
+}
+.houseIcon::before {
+    width: 75px;
+    height: 72px;
+    background-position: -3px -79px;
+}
+
+.burgericon::before {
+		width: 74px;
+    height: 70px;
+    background-position: -95px -3px;
+}
+.burgericon {
+		padding-left: 47px;
+		padding-right: 47px;
+		width: 306px;
+}
+
+.souvenirIcon::before {
+
+		width: 64px;
+    height: 76px;
+    background-position: -203px -48px;
+}
+
+.page-content-features-text:nth-of-type(n+3) {
+		padding-top: 48px;
+		background-color: #eeeeee;
+		min-height: 173px;
+}
+
+.page-content-index-title {
+	font-size: 30px;
+	line-height:24px;
+	text-align:center;
+	margin-top: 53px;
+	margin-bottom:  30px;
+}
+
+.page-content-index-found p{
+		font-weight: normal;
+		color: #333333;
+		text-align:center;
+		line-height:24px;
+}
+
+.page-content-index-form-title{
+	position: relative;
+	background-color: rgba(118, 99, 87, 1	);
+	width: 568px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.page-content-index-form-title p{
+	color: #ffffff;
+	font-size: 21px;
+	line-height:26px;
+	margin-top: 47px;
+	margin-bottom: 0;
+	padding: 31px;
+
+}
+
+.page-content-index-appointment-form{
+	display: block;
+	position: absolute;
+	top: 100px;
 }
 
 .page-content-index-map-picture {
@@ -286,7 +398,7 @@ body {
 
 
 .sprite {
-    background-image: url(spritesheet.png);
+    background-image: url(../img/spritesheet.png);
     background-repeat: no-repeat;
     display: block;
 }
@@ -309,11 +421,7 @@ body {
     background-position: -63px -3px;
 }
 
-.sprite-burgericon {
-    width: 74px;
-    height: 70px;
-    background-position: -95px -3px;
-}
+
 
 .sprite-calendaricon {
     width: 21px;
@@ -345,11 +453,7 @@ body {
     background-position: -73px -31px;
 }
 
-.sprite-houseIcon {
-    width: 75px;
-    height: 72px;
-    background-position: -3px -79px;
-}
+
 
 .sprite-logohtml {
     width: 113px;
@@ -369,11 +473,6 @@ body {
     background-position: -202px -3px;
 }
 
-.sprite-souvenirIcon {
-    width: 64px;
-    height: 76px;
-    background-position: -203px -48px;
-}
 
 .sprite-tviticon {
     width: 17px;
