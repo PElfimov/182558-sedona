@@ -4,8 +4,7 @@ body {
 	min-width: 1280px;
 	margin: 0;
 	padding: 0;
-	background: url("../img/sedona.jpg") no-repeat 50% 0px;
-	background-size: 1280px auto;
+ background-size: 1280px auto;
 	background-color:#f2f2f2;
 	font-family: "PT Sans" ,"Arial", sans-serif;
 	font-size: 14px;
@@ -274,16 +273,10 @@ margin-bottom: 24px;
 	color: #ffffff;
 	font-size: 21px;
 	line-height:26px;
-	margin-top: 47px;
+	margin-top: 45px;
 	margin-bottom: 0;
 	padding: 31px;
 
-}
-
-.page-content-index-appointment-form{
-	display: block;
-	position: absolute;
-	top: 100px;
 }
 
 .page-content-index-map-picture {
@@ -291,7 +284,40 @@ margin-bottom: 24px;
 
 }
 
+.page-content-index-appointment-form {
+	display: block;
+	position: absolute;
+	width: 458px;
+	min-height: 255px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	padding: 55px 55px ;
+	align-content: space-between;
+}
 
+ .page-content-index-appointment-form input {
+	 display: block;
+	 border:none;
+	 background-color: rgba(60 120 161 .6);
+	 padding: 6.5px 14px ;
+	 font-size: 14px;
+ 	 line-height:26px;
+	 font-weight: bold;
+	 text-transform:uppercase ;
+	 margin-bottom: 28px;
+ }
+
+.page-content-index-appointment-form label {
+ padding: 6.5px 0 ;
+ margin-right: auto;
+ line-height: 26px;
+
+}
+
+ .page-content-index-appointment-form input[type="text"]{
+	 width: 317px;
+ }
 
 .page-footer {
 	min-height: 84px;
