@@ -26,9 +26,14 @@ body {
 	width: 1200px;
   margin: 0 auto;
 	position: relative;
+	box-shadow: 0 0 15px 5px rgba(0, 1, 1, .2);
 	/*background-color: white;*/
 }
 
+.page-header {
+		background-color: #ffffff;
+		color:#000000;
+}
 
 .page-header-navigation  a{
 	color: #000000;
@@ -68,6 +73,12 @@ body {
 	 margin-left:auto;
 }
 
+.page-header-navigation li:nth-of-type(4)
+ {
+	 padding-left: 20px;
+	 width:220px;
+}
+
 .page-header-index-logo {
 	position:absolute;
 	top: 0;
@@ -97,7 +108,7 @@ body {
 	width: 458px;
 	height: 352px;
 	background: url("../img/welcomesedona.png") no-repeat;
-	transform: translate(-50%,-51%);
+	transform: translate(-50%, -50.5%);
 	top:50%;
 	left: 50%;
 }
@@ -160,6 +171,7 @@ body {
 }
 .with-photo .page-content-features-text b{
 	color: #ffffff;
+	text-align: center;
 }
 
 .page-content-features-item b{
@@ -184,6 +196,13 @@ body {
 	padding: 60px;
 	padding-top: 55px;
 	padding-bottom: 38px;
+
+}
+
+.big-column{
+	padding-left: 40px;
+	padding-right: 40px;
+	width: 320px;
 
 }
 
@@ -273,16 +292,13 @@ margin-bottom: 24px;
 	color: #ffffff;
 	font-size: 21px;
 	line-height:26px;
-	margin-top: 45px;
+	margin-top: 47px;
 	margin-bottom: 0;
-	padding: 31px;
+	padding: 30px;
 
 }
 
-.page-content-index-map-picture {
-	min-height: 473px;
 
-}
 
 .page-content-index-appointment-form {
 	display: block;
@@ -292,15 +308,16 @@ margin-bottom: 24px;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: flex-start;
-	padding: 55px 55px ;
+	padding: 54px 56px ;
 	align-content: space-between;
+	background-color: #ffffff;
 }
 
  .page-content-index-appointment-form input {
 	 display: block;
 	 border:none;
-	 background-color: rgba(60 120 161 .6);
-	 padding: 6.5px 14px ;
+	 background-color: #f2f2f2;
+	 padding: 6.5px 11px ;
 	 font-size: 14px;
  	 line-height:26px;
 	 font-weight: bold;
@@ -316,7 +333,13 @@ margin-bottom: 24px;
 }
 
  .page-content-index-appointment-form input[type="text"]{
-	 width: 317px;
+	 width: 284px;
+	 padding-right: 50px
+ }
+
+ .page-content-index-map-picture {
+ 	min-height: 473px;
+
  }
 
 .page-footer {
