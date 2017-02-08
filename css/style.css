@@ -125,7 +125,7 @@ body {
 
 .page-content-tagline {
 	display: flex;
-	min-height: 108px;
+	min-height: 110px;
 }
 
 .page-content-tagline b {
@@ -147,7 +147,7 @@ body {
 	text-align: center;
 	margin-left: auto;;
 	margin-right: auto;
-	margin-top: 30px;
+	margin-top: 26px;
 	margin-bottom: 50px;
 }
 
@@ -268,7 +268,7 @@ margin-bottom: 24px;
 	font-size: 30px;
 	line-height:24px;
 	text-align:center;
-	margin-top: 53px;
+	margin-top: 55px;
 	margin-bottom:  30px;
 }
 
@@ -304,7 +304,7 @@ margin-bottom: 24px;
 	display: block;
 	position: absolute;
 	width: 458px;
-	min-height: 255px;
+	min-height: 287px;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: flex-start;
@@ -322,21 +322,83 @@ margin-bottom: 24px;
  	 line-height:26px;
 	 font-weight: bold;
 	 text-transform:uppercase ;
-	 margin-bottom: 28px;
+	 margin-bottom: 29px;
+	 width: 284px;
+	 padding-right: 50px
  }
 
 .page-content-index-appointment-form label {
  padding: 6.5px 0 ;
  margin-right: auto;
  line-height: 26px;
-
 }
 
- .page-content-index-appointment-form input[type="text"]{
-	 width: 284px;
-	 padding-right: 50px
- }
+.page-content-index-appointment-form label:last-of-type {
+ margin-right: 26px;
+}
 
+.page-content-index-appointment-form-more-less {
+	position: relative;
+}
+
+.page-content-index-appointment-form-more-less:first-of-type  {
+	margin-right: 53px;
+}
+
+.page-content-index-appointment-form-more-less input {
+width: 38px;
+padding: 6.5px 38px ;
+text-align: center;
+}
+
+.page-content-index-appointment-form-more-less button {
+	position: absolute;
+	width: 38px;
+  height: 38px;
+	font-size: 0;
+	background-color: #f2f2f2;
+  border: 0;
+  cursor: pointer;
+}
+
+.page-content-index-appointment-form-more-less button::before {
+	content: "";
+	position: absolute;
+	width: 12px;
+	height: 3px;
+	background-color: #a9a9a9;
+	transform: translate(-50% ,-50%);
+}
+
+.page-content-index-appointment-form-more-less button:last-of-type::after {
+	content: "";
+	position: absolute;
+	width: 3px;
+	height: 12px;
+	background-color: #a9a9a9;
+	transform: translate(-50% ,-50%);
+}
+
+.page-content-index-appointment-form-more-less button:nth-last-of-type(1) {
+	right:0;
+	top:0;
+	background-color: #f2f2f2;
+}
+
+.page-content-index-form-btn {
+	width: 100%;
+	border: 0;
+	font-size: 21px;
+	line-height:26px;
+	font-weight: bold;
+	text-transform:uppercase ;
+  cursor: pointer;
+	background-color: #81b3d2;
+	color:#ffffff;
+	padding: 16px;
+	margin-bottom: 1px;
+	margin-top: 24px;
+}
  .page-content-index-map-picture {
  	min-height: 473px;
 

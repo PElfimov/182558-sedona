@@ -100,13 +100,17 @@
   							<label for="exit-date" >Дата выезда:</label>
                 <input class="page-content-index-form-date" type="text" name="exit-date" id="exit-date" value="4 июля 2017">
                 <label for="number-adults" >взрослые:</label>
-  							<button class="page-content-index-form-btn-more-less" type="submit">-</button>
-  							<input type="number" name="number-adults" id="number-adults">
-  							<button class="page-content-index-form-btn-more-less" type="submit">+</button>
-  							<label for="number-children" >дети:</label>
-  							<button class="page-content-index-form-btn-more-less" type="submit">-</button>
-  							<input type="number" name="number-children" id="number-children">
-  							<button class="page-content-index-form-btn-more-less" type="submit">+</button>
+                <div class="page-content-index-appointment-form-more-less">
+    							<button class="page-content-index-form-btn-more-less" type="submit"></button>
+    							<input type="text" name="number-adults" id="number-adults" value="2">
+    							<button class="page-content-index-form-btn-more-less" type="submit"></button>
+                </div>
+                <label for="number-children" >дети:</label>
+                <div class="page-content-index-appointment-form-more-less">
+    							<button class="page-content-index-form-btn-more-less" type="submit"></button>
+    							<input type="text" name="number-children" id="number-children" value="0">
+                  <button class="page-content-index-form-btn-more-less" type="submit"></button>
+                </div>
   							<button class="page-content-index-form-btn" type="submit">Найти</button>
   						</form>
             </div>
