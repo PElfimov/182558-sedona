@@ -327,6 +327,10 @@ margin-bottom: 24px;
 	 padding-right: 50px
  }
 
+  .page-content-index-form-date input:focus{
+		background-color: #ffffff;
+	}
+
  .page-content-index-form-date {
 	 position:relative;
 
@@ -344,8 +348,15 @@ margin-bottom: 24px;
 	 right:11px;
 	 top:8px;
 	 cursor: pointer;
+}
 
- }
+.calendar-icon:hover{
+  background-position: -3px -31px;
+}
+
+.calendar-icon:active{
+	background-position: -30px -31px;
+}
 
 .page-content-index-appointment-form label {
  padding: 6.5px 0 ;
@@ -400,6 +411,22 @@ text-align: center;
 	transform: translate(-50% ,-50%);
 }
 
+.page-content-index-appointment-form-more-less button:hover::after {
+	background-color: #000000;
+}
+
+.page-content-index-appointment-form-more-less button:hover::before {
+	background-color: #000000;
+}
+
+.page-content-index-appointment-form-more-less button:active::after {
+	background-color: #81b3d2;
+}
+
+.page-content-index-appointment-form-more-less button:active::before {
+	background-color: #81b3d2;
+}
+
 .page-content-index-appointment-form-more-less button:nth-last-of-type(1) {
 	right:0;
 	top:0;
@@ -420,22 +447,33 @@ text-align: center;
 	margin-bottom: 1px;
 	margin-top: 24px;
 }
+
+.btn:hover {
+	background-color: #669ec0;
+}
+
+.btn:active {
+	background-color: #5496bd;
+}
+
  .page-content-index-map-picture {
  	min-height: 473px;
-
- }
+}
 
 .page-footer {
+	position:absolute;
+	display: flex;
+	width: 1200px;
 	min-height: 84px;
 	padding-top: 36px;
+	background-color: rgba(254, 254, 254, 0.9);
+	bottom: 0;
 
 }
 
 .page-footer-contacts{
-	float: left;
-	width: 200px;
+	width: 136px;
 	min-height:37px;
-	background-color:rgba(210, 20, 129,0.5);
 	font-size: 21px;
 	line-height:26px;
 	padding-top:11px;
@@ -444,22 +482,93 @@ text-align: center;
 }
 
 .page-footer-social{
-	float: left;
 	width: 150px;
 	min-height:48px;
-	background-color:rgba(210, 20, 129, 0.5);
-	margin-left:190px;
+	margin-left:256px;
+	margin-right: auto;
+	display: flex;
+	justify-content:space-between;
+}
 
+.social-btn {
+	display: block;
+	position: relative;
+	width: 46px;
+	height: 48px;
+	font-size: 0;
+	background-color: #81b3d2;
+}
+
+.social-btn::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-image: url("../img/spritesheet.png");
+	background-repeat: no-repeat;
+}
+
+.social-btn-tvit::before {
+	width: 17px;
+	height: 15px;
+	background-position: -175px -48px;
+}
+
+.social-btn-tvit:active::before {
+	background-position: -273px -48px;
+}
+
+.social-btn-fb::before {
+	width: 10px;
+	height: 19px;
+	background-position: -57px -31px;
+}
+
+.social-btn-fb:active::before {
+	background-position: -73px -31px;
+}
+
+.social-btn-youtube::before {
+	width: 20px;
+	height: 16px;
+	background-position: -296px -48px;
+}
+
+.social-btn-youtube:active::before {
+	background-position: -273px -70px;
 }
 
 .footer-copyright{
-	float: right;
-	width: 241px;
+	display: flex;
+	width: 194px;
 	min-height: 48px;
-	background-color:rgba(210, 20, 129,0.5);
-	vertical-align:middle;
 	line-height:26px;
-	margin-right: 55px;
+	margin-right: 103px;
+	margin-top: 3px;
+
+}
+
+.footer-copyright span{
+	padding:6.5px 0;
+}
+
+.footer-copyright a{
+	font-size: 0;
+	width: 113px;
+	height: 39px;
+	background-image: url("../img/spritesheet.png");
+	background-repeat: no-repeat;
+	background-position: -84px -79px;
+	transform: translate(1px, 2px);
+	margin-left: auto;
+}
+.footer-copyright a:hover {
+	background-position: -84px -124px;
+}
+
+.footer-copyright a:active {
+	background-position: -202px -3px;
 }
 
 .page-content-hotel-selection-form {
@@ -551,75 +660,4 @@ text-align: center;
     width: 26px;
     height: 22px;
     background-position: -63px -3px;
-}
-
-
-
-.sprite-calendaricon-hover {
-    width: 21px;
-    height: 22px;
-    background-position: -3px -31px;
-}
-
-.sprite-calendaricon-push {
-    width: 21px;
-    height: 22px;
-    background-position: -30px -31px;
-}
-
-.sprite-fIcon {
-    width: 10px;
-    height: 19px;
-    background-position: -57px -31px;
-}
-
-.sprite-fIcon-push {
-    width: 10px;
-    height: 19px;
-    background-position: -73px -31px;
-}
-
-
-
-.sprite-logohtml {
-    width: 113px;
-    height: 39px;
-    background-position: -84px -79px;
-}
-
-.sprite-logohtml-hover {
-    width: 113px;
-    height: 39px;
-    background-position: -84px -124px;
-}
-
-.sprite-logohtml-push {
-    width: 113px;
-    height: 39px;
-    background-position: -202px -3px;
-}
-
-
-.sprite-tviticon {
-    width: 17px;
-    height: 15px;
-    background-position: -175px -48px;
-}
-
-.sprite-tviticon-push {
-    width: 17px;
-    height: 15px;
-    background-position: -273px -48px;
-}
-
-.sprite-yicon {
-    width: 20px;
-    height: 16px;
-    background-position: -296px -48px;
-}
-
-.sprite-yicon-push {
-    width: 20px;
-    height: 16px;
-    background-position: -273px -70px;
 }
