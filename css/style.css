@@ -327,6 +327,26 @@ margin-bottom: 24px;
 	 padding-right: 50px
  }
 
+ .page-content-index-form-date {
+	 position:relative;
+
+ }
+
+ .calendar-icon {
+	 position:absolute;
+	 background-image: url(../img/spritesheet.png);
+	 background-repeat: no-repeat;
+	 display: block;
+	 width: 21px;
+	 height: 22px;
+	 background-position: -175px -3px;
+	 z-index: 10;
+	 right:11px;
+	 top:8px;
+	 cursor: pointer;
+
+ }
+
 .page-content-index-appointment-form label {
  padding: 6.5px 0 ;
  margin-right: auto;
@@ -341,8 +361,9 @@ margin-bottom: 24px;
 	position: relative;
 }
 
-.page-content-index-appointment-form-more-less:first-of-type  {
+.page-content-index-appointment-form-more-less:nth-of-type(3)  {
 	margin-right: 53px;
+
 }
 
 .page-content-index-appointment-form-more-less input {
@@ -533,12 +554,6 @@ text-align: center;
 }
 
 
-
-.sprite-calendaricon {
-    width: 21px;
-    height: 22px;
-    background-position: -175px -3px;
-}
 
 .sprite-calendaricon-hover {
     width: 21px;
