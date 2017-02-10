@@ -786,43 +786,94 @@ input[type="checkbox"]:checked + .check-box::before {
 .page-content-sorting-found {
 	min-height:86px;
 	font-size: 0;
+	padding: 30px 72px;
+	display: flex;
 
 }
 
 .page-content-sorting-found b {
-	vertical-align: top;
-	display:inline-block;
+	vertical-align: bottom;
 	font-size:21px;
 	line-height: 26px;
+
 }
 
 .page-content-sorting-found span {
 	vertical-align: bottom;
-	display:inline-block;
 	font-size:12px;
 	line-height: 18px;
+	margin-left: 48px;
+	padding-top: 6px;
 }
 
 
 .page-content-sorting-found ul{
 	display: inline-block;
 	font-size: 0;
-	vertical-align: top;
+	list-style: none;
+	vertical-align:bottom;;
+	padding: 0;
+	padding-top: 3px;
+	margin-left: 39px;
 }
 
 .page-content-sorting-found li{
-	vertical-align: top;
+	vertical-align: bottom;
 	display:inline-block;
 	font-size:12px;
 	line-height: 18px;
+	margin-right: 35px;
+}
+
+.btn-arrow a{
+	font-size: 0;
+}
+
+span.btn-arrow {
+	width: 0;
+	height: 0;
+	border-left: 5.5px solid transparent;
+	border-right: 5.5px solid transparent;
+	border-bottom: 11px solid #cccccc;
+	padding-top: 8px;
 
 }
+
+span.btn-arrow:hover {
+	border-bottom: 11px solid #000000;
+}
+
+span.btn-arrow:active {
+	border-bottom: 11px solid #81b3d2;
+}
+
+span.sorting-found-selected{
+	border-bottom: 11px solid #81b3d2;
+}
+
+span.sorting-found-up {
+	margin-left: auto;
+	transform: translateY(2px);
+}
+
+span.sorting-found-down {
+	transform: rotate(180deg) translateY(-50%);
+	margin-right: 0;
+	margin-left: 13px;
+	margin-right: 1px;
+}
+
 
 .found-hotel-img {
 	width:160px;
 	float:left;
 	min-height:152px;
 	margin-left: 60px;
+}
+
+.page-content-sorting-found a{
+	text-decoration: none;
+	color:inherit;
 }
 
 .found-hotel-img img {
