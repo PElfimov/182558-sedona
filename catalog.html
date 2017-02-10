@@ -7,44 +7,43 @@
   </head>
   <body class="page">
 		<div class ="page-container">
-			<header class="page-header">
+      <header class="page-header">
 				<nav class="page-header-navigation">
-					<ul class="page-header-navigation-list text">
+					<ul class="page-header-navigation-list">
 						<li class="page-header-navigation-item">
 							<a href="#">Информация</a>
 						</li>
-						<li class="page-header-navigation-item">
+						<li>
 							<a href="#">Фото и видео</a>
 						</li>
-						<li class="page-header-navigation-item">
+						<li>
 							<a href="#">Карта штата</a>
 						</li>
-						<li class="page-header-navigation-item">
-							<a class="active" ">Гостиницы</a>
+						<li>
+							<a>Гостиницы</a>
 						</li>
 					</ul>
-				</nav>
-
-				<div class="page-header-index-logo">
+					<div class="page-header-index-logo">
 						<a href="index.html"><img src="img/logosedona.png" width="138" height="70" alt="Логотип «City of Cedona»">Логотип города Седона</a>
-				</div>
+					</div>
+				</nav>
 			</header>
 			<main class="page-content">
-				<form class="page-content-hotel-selection-form clearfix" action="https://echo.htmlacademy.ru" method="post">
+				<form class="page-content-hotel-selection-form" action="https://echo.htmlacademy.ru" method="post">
 					<fieldset class="page-content-infrastructure-form">
 						<legend>Инфраструктура:</legend>
 						<ul>
 							<li>
-								<input type="checkbox" name="swimming-pool" id="swimming-pool">
-								<label for="swimming-pool" >Басейн:</label>
+								<input type="checkbox" name="swimming-pool" id="swimming-pool" checked>
+								<label class="check-box sprite" for="swimming-pool" >Басейн:</label>
 							</li>
 							<li>
-								<input type="checkbox" name="parking" id="parking">
-								<label for="parking" >Парковка:</label>
+								<input type="checkbox" name="parking" id="parking" >
+								<label class="check-box sprite" for="parking" >Парковка:</label>
 							</li>
 							<li>
 								<input type="checkbox" name="wi-fi" id="wi-fi">
-								<label for="wi-fi" >Wi-fi:</label>
+								<label class="check-box sprite" for="wi-fi" >Wi-fi:</label>
 							</li>
 						</ul>
 					</fieldset>
@@ -52,23 +51,35 @@
 						<legend>Тип жилья:</legend>
 						<ul>
 							<li>
-								<input type="checkbox" name="hotel-type" id="hotel-type">
-								<label for="hotel-type" >Отель:</label>
+								<input type="checkbox" name="hotel-type" id="hotel-type" checked>
+								<label class="check-box sprite" for="hotel-type" >Гостиница:</label>
 							</li>
 							<li>
-								<input type="checkbox" name="motel-type" id="motel-type">
-								<label for="motel-type" >Мотель:</label>
+								<input type="checkbox" name="motel-type" id="motel-type" checked>
+								<label class="check-box sprite" for="motel-type" >Мотель:</label>
 							</li>
 							<li>
-								<input type="checkbox" name="apartments-type" id="apartments-type">
-								<label for="apartments-type" >Апартаменты:</label>
+								<input type="checkbox" name="apartments-type" id="apartments-type" checked>
+								<label class="check-box sprite" for="apartments-type" >Апартаменты:</label>
 							</li>
 						</ul>
 					</fieldset>
 					<fieldset class="price-night-form">
-						<legend>Стоимоть в сутки:</legend>
-					<! Тут будут бегунки для выбора цены отеля!>
-					<button class="btn" type="submit">Показать</button>
+              <div class="filter-range">
+                <div class="filter-range-title">Стоимость в сутки (р):</div>
+                <div class="price-controls">
+                  <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                  <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+                </div>
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="range-toggle range-toggle-min"></div>
+                  <div class="range-toggle range-toggle-max"></div>
+                </div>
+                <button class="btn-transparent" type="submit">Показать</button>
+            </div>
 					</fieldset>
 
 				</form>
@@ -103,7 +114,7 @@
 							<p>Рейтинг: <span class="content-hotel-rating-sum">8,5</span></p>
 						</div>
 					</article>
-					<article class="found-hotel clearfix">
+					<article class="found-hotel">
 						<div class="found-hotel-img">
 							<img src="img/desertqualphoto.jpg" width="135" height="90" alt="Мотель «Desert quail inn»">
 						</div>
@@ -140,18 +151,18 @@
 					</article>
 				</div>
 			</main>
-			<footer class="page-footer clearfix ">
+      <footer class="page-footer inner-page">
 				<section class="page-footer-contacts">
 				#Visitsedona
 				</section>
 				<section class="page-footer-social">
-					<a class="social-btn social-btn-tvit" href="#">Твитер</a>
-					<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-					<a class="social-btn social-btn-youtube" href="#">Ютьюб</a>
+					<a class="btn social-btn social-btn-tvit" href="#">Твитер</a>
+					<a class="btn social-btn social-btn-fb" href="#">Фейсбук</a>
+					<a class="btn social-btn social-btn-youtube" href="#">Ютьюб</a>
 				</section>
 				<section class="footer-copyright">
 					<span>Website by</span>
-					<a href="#"><img src="img/logohtml.png" width="113" height="39" alt="HTML Academy"></a>
+					<a href="https://htmlacademy.ru">Логотип html Academy</a>
 				</section>
 			</footer>
 		</div>

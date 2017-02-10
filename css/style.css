@@ -471,6 +471,10 @@ text-align: center;
 
 }
 
+.inner-page.page-footer{
+	position:static;
+}
+
 .page-footer-contacts{
 	width: 136px;
 	min-height:37px;
@@ -478,7 +482,6 @@ text-align: center;
 	line-height:26px;
 	padding-top:11px;
 	margin-left:133px;
-
 }
 
 .page-footer-social{
@@ -572,40 +575,222 @@ text-align: center;
 }
 
 .page-content-hotel-selection-form {
+	background: #537da7 url("../img/mainphotocat.jpg") no-repeat 50% -295px;
 
-	background: #000000 url("../img/mainphotocat.jpg") no-repeat 50% -290px;
-	background-size: 1280px auto;
-	min-height:217px;
+	min-height:163px;
+	display: flex;
+	color:white;
+	padding: 27px 70px;
 }
 
-.page-content-infrastructure-form,
-.hotel-type-form {
-	float:left;
-	width: 240px;
-	min-height:217px;
-	padding:0;
+.page-content-hotel-selection-form legend{
+	font-size: 16px;
+	line-height: 21px;
+	font-weight: bold;
+	margin-bottom: 26px;
+}
+
+.page-content-hotel-selection-form label{
+	font-weight: normal;
+}
+
+.page-content-hotel-selection-form fieldset{
 	border: none;
-	margin-left: 50px;
+	padding: 0;
+	margin: 0;
+	margin-right: 115px;
+}
+
+.page-content-hotel-selection-form .price-night-form{
+	margin-right: 2px;
+	margin-left: auto;
+}
+
+.page-content-hotel-selection-form ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.page-content-hotel-selection-form li{
+		margin-bottom: 24px;
+}
+
+.page-content-hotel-selection-form li:last-of-type{
+		margin-bottom: 0;
+}
+
+.page-content-hotel-selection-form input[type="checkbox"]
+{
+    display:none;
+}
+
+.check-box {
+	cursor: pointer;
+	position: relative;
+	padding-left: 41px;
 
 }
-.price-night-form {
-	float:right;
-	width: 370px;
-	margin-right: 50px;
-	padding:0;
-	border: none;
-	min-height:217px;
+
+.check-box::before{
+	content: "";
+	position: absolute;
+	width: 16.5px;
+	height: 16.25px;
+	border: solid white 2px;
+	border-radius: 20%;
+	left: 2px;;
+}
+
+.page-content-hotel-selection-form input[disabled] + label::before {
+	border-color: #6a6a6a;
+}
+
+input[type="checkbox"]:checked + .check-box::before {
+	background-image: url(../img/spritesheet.png);
+	background-repeat: no-repeat;
+	border:none;
+	width: 26px;
+	height: 22px;
+	background-position: -3px -3px;
+	left: 1px;
+	top: -2px;
+}
+
+.page-content-hotel-selection-form input[disabled]:checked + label::before {
+	background-position: -63px -3px;
+}
+
+
+.filter-range {
+  width: 328px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.filter-range-title {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price-controls {
+  position: relative;
+  height: 32px;
+  margin-bottom: 20px;
+	margin-left: 10px;
+  font-size: 0;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 22px;
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 30px;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls .max-price{
+	padding-left: 56px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+	color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+  margin-bottom: 32px;
+	margin-left: 10px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 1px;
+}
+
+.range-toggle-max {
+  left: 79.5%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 31px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+
+  background: #ffffff;
 }
 
 .page-content-sorting-found {
 	min-height:86px;
-
-
 }
 
 .page-content-sorting-found li{
 	display:inline-block;
-
 }
 
 .found-hotel-img {
@@ -635,29 +820,4 @@ text-align: center;
 	padding: 10px;
 	min-height:132px;
 
-}
-
-
-.sprite {
-    background-image: url(../img/spritesheet.png);
-    background-repeat: no-repeat;
-    display: block;
-}
-
-.sprite-_ {
-    width: 26px;
-    height: 22px;
-    background-position: -3px -3px;
-}
-
-.sprite-_ {
-    width: 22px;
-    height: 22px;
-    background-position: -35px -3px;
-}
-
-.sprite-_-locked {
-    width: 26px;
-    height: 22px;
-    background-position: -63px -3px;
 }
