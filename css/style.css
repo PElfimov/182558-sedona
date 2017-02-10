@@ -772,7 +772,6 @@ input[type="checkbox"]:checked + .check-box::before {
   line-height: 20px;
   color: #ffffff;
   text-transform: uppercase;
-
   background: transparent;
   border: 2px solid #ffffff;
   border-radius: 2px;
@@ -781,16 +780,42 @@ input[type="checkbox"]:checked + .check-box::before {
 
 .btn-transparent:hover {
   color: #000000;
-
   background: #ffffff;
 }
 
 .page-content-sorting-found {
 	min-height:86px;
+	font-size: 0;
+
+}
+
+.page-content-sorting-found b {
+	vertical-align: top;
+	display:inline-block;
+	font-size:21px;
+	line-height: 26px;
+}
+
+.page-content-sorting-found span {
+	vertical-align: bottom;
+	display:inline-block;
+	font-size:12px;
+	line-height: 18px;
+}
+
+
+.page-content-sorting-found ul{
+	display: inline-block;
+	font-size: 0;
+	vertical-align: top;
 }
 
 .page-content-sorting-found li{
+	vertical-align: top;
 	display:inline-block;
+	font-size:12px;
+	line-height: 18px;
+
 }
 
 .found-hotel-img {
@@ -798,20 +823,17 @@ input[type="checkbox"]:checked + .check-box::before {
 	float:left;
 	min-height:152px;
 	margin-left: 60px;
-
 }
 
 .found-hotel-img img {
 	display:block;
 	margin: 31px auto;
-
 }
 .found-hotel-content {
 	min-height:132px;
 	width:280px;
 	padding: 10px;
 	float:left;
-
 }
 
 .content-hotel-rating {
@@ -819,5 +841,4 @@ input[type="checkbox"]:checked + .check-box::before {
 	width:200px;
 	padding: 10px;
 	min-height:132px;
-
 }
