@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-		<link rel="stylesheet" href="css/style.css">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
   <body class="page">
 		<div class ="page-container">
       <header class="page-header">
@@ -28,7 +30,7 @@
 					</div>
 				</nav>
 			</header>
-			<main class="page-content">
+			<main class="page-content inner-page-content">
 				<form class="page-content-hotel-selection-form" action="https://echo.htmlacademy.ru" method="post">
 					<fieldset class="page-content-infrastructure-form">
 						<legend>Инфраструктура:</legend>
@@ -84,9 +86,9 @@
 				</form>
 				<div class="page-content-sorting-found">
 					<b class="number-found">Найдено: 3</b>
-					<span>Сортировка:</span>
+					<span class="page-content-sorting-found-text">Сортировка:</span>
 					<ul class="text">
-						<li class="sorting-found-type"><a href="#">по цене</a></li>
+						<li class="sorting-found-type sorting-found-type-selected"><a href="#">по цене</a></li>
 						<li class="sorting-found-type"><a href="#">по типу</a></li>
 						<li class="sorting-found-type"><a href="#">по рейтингу</a></li>
 					</ul>
@@ -94,13 +96,13 @@
           <span class="btn-arrow sorting-found-down sorting-found-selected"><a href="#">сортировка по убыванию</a></span>
         </div>
 				<div class="page-content-catalog">
-					<article class="found-hotel clearfix">
+					<article class="found-hotel">
 						<div class="found-hotel-img">
 							<img src="img/amararesortphoto.jpg" width="135" height="90" alt="Отель «Amara Resort & Spa»">
 						</div>
 						<div class="found-hotel-content">
 							<h2 class="hotel-title text"><a href="#">Amara resort & spa</a></h2>
-							<p class="content-hotel-type text">Гостинца</p>
+							<p class="content-hotel-type text">Гостиница</p>
 							<p class="content-hotel-price text">от 4000 р.</p>
 							<a class="content-hotel-btn content-hotel-btn-more" href="#">Подробнее</a>
 							<a class="content-hotel-btn content-hotel-btn-reserv" href="#">Забронировать</a>
@@ -127,10 +129,11 @@
 						<div class="content-hotel-rating">
 							<span class="content-hotel-rating-stars">★</span>
 							<span class="content-hotel-rating-stars">★</span>
+              <span class="content-hotel-rating-stars">★</span>
 							<p>Рейтинг: <span class="content-hotel-rating-sum">8,9</span></p>
 						</div>
 					</article>
-					<article class="found-hotel clearfix">
+					<article class="found-hotel">
 						<div class="found-hotel-img">
 							<img src="img/villasphoto.jpg" width="135" height="90" alt="Апартаменты «Villas at poco diablo»">
 						</div>
@@ -142,7 +145,6 @@
 							<a class="content-hotel-btn content-hotel-btn-reserv" href="#">Забронировать</a>
 						</div>
 						<div class="content-hotel-rating">
-							<span class="content-hotel-rating-stars">★</span>
 							<span class="content-hotel-rating-stars">★</span>
 							<span class="content-hotel-rating-stars">★</span>
 							<p>Рейтинг: <span class="content-hotel-rating-sum">9,2</span></p>
