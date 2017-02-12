@@ -93,7 +93,7 @@
 						<h2 class="page-content-index-title">Заинтересовались?</h2>
 						<p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 						<div class="page-content-index-form-title">
-							<p>Поиск гостиницы в Седоне</p>
+							<p class="page-content-index-form-btn-open-closed" >Поиск гостиницы в Седоне</p>
   						<form class="page-content-index-appointment-form" action="https://echo.htmlacademy.ru" method="post">
   							<label for="coming-date" >Дата заезда:</label>
 								<div class="page-content-index-form-date">
@@ -121,8 +121,8 @@
   						</form>
             </div>
 					</div>
-					<div class="page-content-index-map-picture">
-						<img class="photo" src="img/map.jpg" width="1200" height="593" alt="Фотография карты «City of Cedona»">
+					  <div class="page-content-index-map-picture">
+						  <div class="yandex-map-show" id="yandex-map"></div>
 					</div>
 				</div>
 			</main>
@@ -141,5 +141,7 @@
 				</section>
 			</footer>
 		</div>
+    <script src="js/script.js"></script>
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=csCsRKkDve572xpzQg-pCWOoyBjTP3KA&amp;width=1200&amp;height=593&id=yandex-map&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
   </body>
 </html>

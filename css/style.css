@@ -298,7 +298,16 @@ margin-bottom: 24px;
 	margin-top: 47px;
 	margin-bottom: 0;
 	padding: 30px;
+}
 
+
+.page-content-index-form-btn-open-closed:hover {
+	background-color: #604e43;
+}
+
+.page-content-index-form-btn-open-closed:active {
+	color:#928a85;
+	background-color: #503e33;
 }
 
 
@@ -314,6 +323,11 @@ margin-bottom: 24px;
 	padding: 54px 56px ;
 	align-content: space-between;
 	background-color: #ffffff;
+	z-index: 9;
+}
+
+.page-content-index-appointment-form-close {
+	display: none;
 }
 
  .page-content-index-appointment-form input {
@@ -457,11 +471,16 @@ text-align: center;
 
 .btn:active {
 	background-color: #5496bd;
+	color:#94b9d2;
 }
 
  .page-content-index-map-picture {
- 	min-height: 473px;
-}
+ 	min-height: 593px;
+	background: url("../img/map.jpg") no-repeat 50% 0;
+	background-size: 1200px auto;
+	}
+
+
 
 .page-footer {
 	position:absolute;
