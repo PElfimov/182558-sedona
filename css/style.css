@@ -235,7 +235,7 @@ html, body {
   content: "";
   position: absolute;
   display: block;
-  top: 29%;
+  top: 96px;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -629,6 +629,7 @@ html, body {
 
 .page-content-hotel-selection-form {
   background: #537da7 url("../img/mainphotocat.jpg") no-repeat 50% -295px;
+  background-size: cover;
   min-height: 163px;
   display: -webkit-box;
   display: -ms-flexbox;
