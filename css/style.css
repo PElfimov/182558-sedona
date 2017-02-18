@@ -601,10 +601,14 @@ html, body {
 }
 
 .footer-copyright span {
+  display: inline-block;
+  vertical-align: middle;
   padding: 6.5px 0;
 }
 
 .footer-copyright a {
+  display: inline-block;
+  vertical-align: middle;
   font-size: 0;
   width: 113px;
   height: 39px;
@@ -889,6 +893,8 @@ input[type="checkbox"]:checked+.check-box::before {
 }
 
 .btn-arrow {
+  display: inline-block;
+  vertical-align: middle;
   width: 0;
   height: 0;
   border-left: 5.5px solid transparent;
@@ -910,7 +916,7 @@ input[type="checkbox"]:checked+.check-box::before {
 }
 
 .sorting-found-up {
-  margin-left: auto;
+  margin-left: auto;;
   -webkit-transform: translateY(2px);
   transform: translateY(2px);
 }
@@ -1014,6 +1020,7 @@ input[type="checkbox"]:checked+.check-box::before {
 .content-hotel-price {
   width: 142px;
   font-weight: normal;
+  margin-bottom: 14px;
 }
 
 .content-hotel-btn {
@@ -1022,7 +1029,7 @@ input[type="checkbox"]:checked+.check-box::before {
   text-decoration: none;
   color: #ffffff;
   text-align: center;
-  margin-top: 14px;
+  margin-top: 0;
 }
 
 .content-hotel-btn-more:hover {
