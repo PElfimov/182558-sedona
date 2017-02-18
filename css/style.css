@@ -8,6 +8,7 @@ html, body {
   color: #000000;
   font-weight: bold;
   text-transform: uppercase;
+
 }
 
 .text {
@@ -24,6 +25,7 @@ html, body {
   position: relative;
   box-shadow: 0 0 15px 5px rgba(0, 1, 1, .2);
   background-color: #ffffff;
+  overflow:hidden;
 }
 
 .page-header {
@@ -92,19 +94,13 @@ html, body {
   position: relative;
   width: 1200px;
   height: 510px;
-  background-color: #3c78a1;
+  background: #3c78a1 url("../img/mainphoto.jpg") no-repeat;
 }
 
 .page-content-main-picture img {
-  display: block;
-}
-
-.page-content-main-picture::before {
-  content: "";
   position: absolute;
   width: 458px;
   height: 352px;
-  background: url("../img/welcomesedona.png") no-repeat;
   -webkit-transform: translate(-50%, -50.5%);
   transform: translate(-50%, -50.5%);
   top: 50%;
@@ -117,9 +113,10 @@ html, body {
   width: 1200px;
   height: 57px;
   background: url("../img/mainphotomask.svg") no-repeat;
-  -webkit-transform: translate(-50%, -100%);
-  transform: translate(-50%, -100%);
-  top: 100%;
+  background-size: 100% 100%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: -1px;;
   left: 50%;
 }
 
@@ -138,9 +135,8 @@ html, body {
   display: block;
   width: 576px;
   margin-left: auto;
-  ;
   margin-right: auto;
-  margin-top: auto;
+  margin-top: 58px;
 }
 
 .page-content-features-header p {
@@ -178,7 +174,7 @@ html, body {
   color: #ffffff;
 }
 
-.with-photo .page-content-features-text b {
+.with-photo .page-content-features-name {
   color: #ffffff;
   text-align: center;
 }
@@ -601,6 +597,7 @@ html, body {
   line-height: 26px;
   margin-right: 103px;
   margin-top: 3px;
+  font-weight: normal;
 }
 
 .footer-copyright span {
@@ -657,7 +654,7 @@ html, body {
   border: none;
   padding: 0;
   margin: 0;
-  margin-right: 115px;
+  margin-right: 119px;
 }
 
 .page-content-hotel-selection-form .price-night-form {
@@ -686,7 +683,7 @@ html, body {
 .check-box {
   cursor: pointer;
   position: relative;
-  padding-left: 41px;
+  padding-left: 43px;
 }
 
 .check-box::before {
@@ -826,7 +823,9 @@ input[type="checkbox"]:checked+.check-box::before {
   display: block;
   width: 72px;
   margin: 0 auto;
-  padding: 6px 31px;
+  padding: 6px 28px;
+  padding-left: 35px;
+
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
@@ -957,6 +956,7 @@ input[type="checkbox"]:checked+.check-box::before {
   min-height: 90px;
   border-bottom: 1px solid #cccccc;
   padding: 30px 72px;
+  padding-bottom: 29px;
   padding-right: 71px;
   display: -webkit-box;
   display: -ms-flexbox;
